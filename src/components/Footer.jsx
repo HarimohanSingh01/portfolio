@@ -1,13 +1,13 @@
 import { Github, Linkedin } from "lucide-react";
 
-function Footer() {
+function Footer({name,socials}) {
   return (
     <footer className="footer">
       <div className="container footer-inner">
-        <p></p>
+        <p>2026 {name}. Thanks for visiting</p>
         <div className="social-icons">
-          <a className="icon-link"><Github size={18} /></a>
-          <a className="icon-link"><Linkedin size={18} /></a>
+          <a className="icon-link" href={socials.github}><Github size={18} />Github</a>
+          <a className="icon-link" href={socials.linkedin}><Linkedin size={18} />Linkedin</a>
         </div>
       </div>
     </footer>
